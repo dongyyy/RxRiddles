@@ -1,6 +1,7 @@
 package com.vanniktech.rxriddles
 
 import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.core.Single
 
 object Riddle1 {
   /**
@@ -9,6 +10,6 @@ object Riddle1 {
    * Use case: You want to transform some value to the reactive world.
    */
   fun solve(value: Int): Observable<Int> {
-    TODO()
+    return Observable.just(value)
   }
 }
