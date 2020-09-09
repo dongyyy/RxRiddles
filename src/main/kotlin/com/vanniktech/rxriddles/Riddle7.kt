@@ -1,6 +1,7 @@
 package com.vanniktech.rxriddles
 
 import io.reactivex.rxjava3.core.Observable
+import java.util.concurrent.TimeUnit
 
 object Riddle7 {
   /**
@@ -9,6 +10,6 @@ object Riddle7 {
    * Use case: You never want to show the same value twice.
    */
   fun solve(source: Observable<Int>): Observable<Int> {
-    TODO()
+    return source.distinct()
   }
 }
